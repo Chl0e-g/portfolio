@@ -9,14 +9,25 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@svgr/webpack": "^8.0.1",
     "@types/node": "20.4.4",
     "@types/react": "18.2.16",
     "@types/react-dom": "18.2.7",
     "eslint": "8.45.0",
     "eslint-config-next": "13.4.12",
+    "eslint-plugin-prettier": "^5.0.0",
+    "framer-motion": "^10.13.1",
     "next": "13.4.12",
+    "next-seo": "^6.1.0",
+    "prettier": "^3.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^6.0.5",
     "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "@types/react-slick": "^0.23.10"
   }
 }
