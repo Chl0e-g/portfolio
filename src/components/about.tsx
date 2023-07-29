@@ -123,9 +123,12 @@ export default function About() {
       >
         <Title variants={textStaggerChild}>About me</Title>
         <Description variants={textStaggerChild}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean suscipit, nisi quis
-          ultrices lobortis, justo justo pharetra dui, vitae tempus enim dolor eu lectus. Sed porta
-          pharetra odio non facilisis.
+          I came to software development with a background in product management and UX work, so I
+          have a passionately user-centric mindset and love working within talented,
+          cross-functional teams. Since transitioning into software I&apos;ve been working at a
+          Leeds-based web development agency on a wide variety of client projects. I&apos;m looking
+          for opportunties to work with the latest tech in a role where I can learn from the best,
+          and create brilliant software solutions.
         </Description>
         <Description variants={textStaggerChild}>
           Here are some of the technologies I love working with:
