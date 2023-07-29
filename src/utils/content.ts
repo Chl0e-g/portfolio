@@ -28,7 +28,7 @@ export const portfolio = {
     alt: "GIF of this website in use",
   },
   title: "Portfolio Website",
-  gitHubLink: "https://github.com",
+  gitHubLink: "https://github.com/Chl0e-g/portfolio",
   description:
     "It's the website you're on! Featuring some of my current favourite technologies to use: NextJS, Framer Motion, and Styled Components. I added lots of animations, one of the things I most enjoy doing on the front-end.",
   tech: ["React (NextJS)", "Framer Motion", "Styled Components"],

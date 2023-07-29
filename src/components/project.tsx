@@ -202,7 +202,7 @@ export default function Project({
         {gitHubLink && (
           <TextLink
             variants={textStaggerChild}
-            href={websiteLink}
+            href={gitHubLink}
             target="_blank"
             rel="noopener noreferer"
           >
