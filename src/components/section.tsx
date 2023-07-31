@@ -14,10 +14,10 @@ const OuterContainer = styled.div<IProps>`
   overflow: hidden;
   background-color: ${({ $accentBackground, theme }) =>
     $accentBackground ? theme.colors.accentLight : theme.colors.primaryLight};
-  ${mq.mobileXSmall(css`
+  @media (max-width: 350px) {
     height: fit-content;
     padding: 24px 0;
-  `)}
+  }
 `;
 
 const InnerContainer = styled.div`
