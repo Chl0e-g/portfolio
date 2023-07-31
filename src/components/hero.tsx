@@ -1,6 +1,5 @@
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import styled, { css } from "styled-components";
-import DownArrow from "@/assets/svg/downArrow.svg";
 import { useEffect, useState } from "react";
 import mq from "@/utils/mq";
 import useWindowSize from "@/hooks/useWindowSize";
@@ -51,26 +50,9 @@ const GradientText = styled.span`
   font-weight: 700;
 `;
 
-const ScrollArrow = styled(motion.div)`
-  position: absolute;
-  bottom: 0;
-  fill: ${({ theme }) => theme.colors.primaryDarkMuted};
-`;
-
 export default function Hero() {
   const { width } = useWindowSize();
-  const [showScrollArrow, setShowScrollArrow] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      window.scrollY === 0 ? setShowScrollArrow(true) : setShowScrollArrow(false);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   useEffect(() => {
     width <= BREAKPOINT_SM ? setIsMobile(true) : setIsMobile(false);
@@ -109,30 +91,6 @@ export default function Hero() {
         I&apos;m a <GradientText>React developer</GradientText> who&apos;s passionate about building
         beautiful, user-centred software
       </Intro>
-      <AnimatePresence>
-        {showScrollArrow && (
-          <ScrollArrow
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1, transition: { delay: 3 } }}
-            exit={{ opacity: 0, transition: { delay: 0 } }}
-            onClick={() => {}}
-          >
-            <motion.div
-              animate={{
-                y: ["2px", "-2px"],
-              }}
-              transition={{
-                repeat: Infinity,
-                ease: "easeOut",
-                repeatType: "reverse",
-                duration: 0.5,
-              }}
-            >
-              <DownArrow />
-            </motion.div>
-          </ScrollArrow>
-        )}
-      </AnimatePresence>
     </Wrapper>
   );
 }
