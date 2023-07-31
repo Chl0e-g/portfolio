@@ -16,6 +16,9 @@ const Background = styled.div`
   padding-top: 120px;
   z-index: -1;
   overflow: hidden;
+  ${mq.ultraWide(css`
+    padding-top: 220px;
+  `)}
 `;
 
 const AngledBackground = styled(motion.div)`
@@ -33,6 +36,11 @@ const AngledBackground = styled(motion.div)`
     background: ${({ theme }) => theme.colors.primaryDark};
     transform: rotate(-3deg);
     z-index: -1;
+    outline: 1px solid transparent;
+    ${mq.ultraWide(css`
+      top: -160px;
+      height: 300px;
+    `)}
   }
 `;
 

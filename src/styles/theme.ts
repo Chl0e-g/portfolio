@@ -50,6 +50,11 @@ const theme = {
         fontSize: "1.2rem",
         lineHeight: "2rem",
       },
+      small: {
+        margin: 0,
+        fontSize: "1rem",
+        lineHeight: "1.8rem",
+      },
     },
   },
 };

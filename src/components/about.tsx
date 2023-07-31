@@ -55,6 +55,9 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  ${mq.mobileXSmall(css`
+    gap: 20px;
+  `)}
 `;
 
 const Row = styled(motion.div)`
@@ -64,7 +67,7 @@ const Row = styled(motion.div)`
 const Title = styled(motion.h2)`
   ${({ theme }) => theme.typography.h2};
   ${mq.mobileXSmall(css`
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   `)}
 `;
 
@@ -72,7 +75,8 @@ const Description = styled(motion.p)`
   ${({ theme }) => theme.typography.p.normal};
   margin-top: 20px;
   ${mq.mobileXSmall(css`
-    font-size: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.8rem;
   `)}
 `;
 
@@ -91,6 +95,9 @@ const LogoWrapper = styled.div`
   div {
     text-align: center;
   }
+  ${mq.mobileXSmall(css`
+    font-size: 0.9rem;
+  `)}
 `;
 
 export default function About() {
@@ -110,7 +117,7 @@ export default function About() {
     speed: 2000,
     autoplaySpeed: 2000,
     cssEase: "linear",
-    pauseOnHover: false,
+    swipeToSlide: true,
   };
 
   return (
@@ -124,11 +131,10 @@ export default function About() {
         <Title variants={textStaggerChild}>About me</Title>
         <Description variants={textStaggerChild}>
           I came to software development with a background in product management and UX work, so I
-          have a passionately user-centric mindset and love working within talented,
-          cross-functional teams. Since transitioning into software I&apos;ve been working at a
-          Leeds-based web development agency on a wide variety of client projects. I&apos;m looking
-          for opportunties to work with the latest tech in a role where I can learn from the best,
-          and create brilliant software solutions.
+          have a passionately user-centric mindset and love working within cross-functional teams.
+          Since then I&apos;ve been working at a web development agency on a wide variety of client
+          projects. I&apos;m looking for opportunties to work with the latest tech in a role where I
+          can learn from the best, and create brilliant software solutions.
         </Description>
         <Description variants={textStaggerChild}>
           Here are some of the technologies I love working with:

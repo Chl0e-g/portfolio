@@ -1,3 +1,4 @@
+export const BREAKPOINT_XL = 1600;
 export const BREAKPOINT_LG = 1179;
 export const BREAKPOINT_MD = 991;
 export const BREAKPOINT_SM = 767;

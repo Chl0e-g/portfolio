@@ -53,7 +53,7 @@ const Title = styled(motion.h2)`
     margin-bottom: 34px;
   `)}
   ${mq.mobileXSmall(css`
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-bottom: 20px;
   `)}
 `;
@@ -62,7 +62,7 @@ const Description = styled(motion.p)`
   ${({ theme }) => theme.typography.p.normal};
   margin-top: 20px;
   ${mq.mobileXSmall(css`
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: 1.8rem;
   `)}
 `;
